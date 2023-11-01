@@ -46,8 +46,10 @@
 
     <div class="bg-[#f3f3f3]">
       <div class="container mx-auto">
-        <div class="flex">
-          <div class="w-3/4 grid grid-cols-3 gap-2 my-8">
+        <div class="flex flex-col lg:flex-row">
+          <div
+            class="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 my-8"
+          >
             <div class="col-span-3 font-bold text-4xl my-3">
               <h1 class="pb-2">KITCHENWARE</h1>
             </div>
@@ -572,14 +574,20 @@
                 </button>
               </div>
             </div>
-            <div>
-              <section></section>
+            <div
+              class="flex flex-col align-middle bg-white rounded-lg px-5 py-5 mt-4"
+            >
+              <section class="border-b-2 border-gray-100"></section>
               <section class="border-b-2 border-gray-100">
                 <h1>Total price: <span></span></h1>
                 <h1>Discount : <span></span></h1>
                 <h1>Total:<span></span></h1>
               </section>
-              <button>Make Purchase</button>
+              <button
+                class="btn rounded-none bg-[#e527b2] text-white text-base font-semibold"
+              >
+                Make Purchase
+              </button>
             </div>
           </div>
         </div>
