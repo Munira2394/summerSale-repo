@@ -48,13 +48,13 @@
       <div class="container mx-auto">
         <div class="flex flex-col lg:flex-row">
           <div
-            class="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 my-8"
+            class="w-full grid grid-cols-1 lg:grid-cols-3 gap-2 my-8"
           >
             <div class="col-span-3 font-bold text-4xl my-3">
               <h1 class="pb-2">KITCHENWARE</h1>
             </div>
             <!-- card 1 start -->
-            <div class="card bg-base-100">
+            <div onclick="priceCalculate('prod1-price','total-price-before','prod1-name','product-list')" class="card bg-base-100">
               <figure class="mx-4 mt-4 h-[200px] bg-[#f3f3f3]">
                 <img
                   src="images//prod1.png"
@@ -98,10 +98,10 @@
 
                 <!-- rating -->
 
-                <h2 class="card-title font-semibold text-base">
+                <h2 class="card-title font-semibold text-base" id="prod1-name">
                   K. Accessories
                 </h2>
-                <p class="font-normal text-sm"><span>39.00</span> TK</p>
+                <p class="font-normal text-sm"><span id="prod1-price">39.00</span> TK</p>
                 <!-- <div class="card-actions">
               <button class="btn btn-primary">Buy Now</button>
             </div> -->
@@ -110,7 +110,7 @@
             <!-- card 1 end -->
 
             <!-- card 2 start -->
-            <div class="card bg-base-100">
+            <div class="card bg-base-100" onclick="priceCalculate('prod2-price','total-price-before','prod2-name','product-list')" >
               <figure class="h-[200px] bg-gray-100 mx-4 mt-4">
                 <img
                   src="images//prod2.png"
@@ -154,10 +154,10 @@
 
                 <!-- rating -->
 
-                <h2 class="card-title font-semibold text-base">
+                <h2 id="prod2-name" class="card-title font-semibold text-base">
                   K. Accessories
                 </h2>
-                <p class="font-normal text-sm"><span>39.00</span> TK</p>
+                <p class="font-normal text-sm"><span id="prod2-price">25.00</span> TK</p>
                 <!-- <div class="card-actions">
                 <button class="btn btn-primary">Buy Now</button>
               </div> -->
@@ -166,7 +166,7 @@
             <!-- card 2 end -->
 
             <!-- card 3 start -->
-            <div class="card bg-base-100">
+            <div class="card bg-base-100" onclick="priceCalculate('prod3-price','total-price-before','prod3-name','product-list')" >
               <figure class="mx-4 mt-4 h-[200px] bg-[#f3f3f3]">
                 <img
                   src="images//prod3.png"
@@ -209,10 +209,10 @@
 
                 <!-- rating -->
 
-                <h2 class="card-title font-semibold text-base">
-                  K. Accessories
+                <h2 id="prod3-name" class="card-title font-semibold text-base">
+                  Home Cooker
                 </h2>
-                <p class="font-normal text-sm"><span>39.00</span> TK</p>
+                <p class="font-normal text-sm"><span id="prod3-price">49.00</span> TK</p>
                 <!-- <div class="card-actions">
                 <button class="btn btn-primary">Buy Now</button>
               </div> -->
@@ -223,7 +223,7 @@
               <h1 class="pb-2">SPORTSWARE</h1>
             </div>
             <!-- card 4 start -->
-            <div class="card bg-base-100">
+            <div class="card bg-base-100" onclick="priceCalculate('prod4-price','total-price-before','prod4-name','product-list')">
               <figure class="mx-4 mt-4 h-[200px] bg-[#f3f3f3]">
                 <img
                   src="images//prod4.png"
@@ -266,10 +266,10 @@
 
                 <!-- rating -->
 
-                <h2 class="card-title font-semibold text-base">
-                  K. Accessories
+                <h2 id="prod4-name"  class="card-title font-semibold text-base">
+                  Sports Back Cap
                 </h2>
-                <p class="font-normal text-sm"><span>39.00</span> TK</p>
+                <p class="font-normal text-sm"><span id="prod4-price">49.00</span> TK</p>
                 <!-- <div class="card-actions">
                 <button class="btn btn-primary">Buy Now</button>
               </div> -->
@@ -278,7 +278,7 @@
             <!-- card 4 end -->
 
             <!-- card 5 start -->
-            <div class="card bg-base-100">
+            <div class="card bg-base-100" onclick="priceCalculate('prod5-price','total-price-before','prod5-name','product-list')">
               <figure class="mx-4 mt-4 h-[200px] bg-[#f3f3f3]">
                 <img
                   src="images//prod5.png"
@@ -321,10 +321,10 @@
 
                 <!-- rating -->
 
-                <h2 class="card-title font-semibold text-base">
-                  K. Accessories
+                <h2 class="card-title font-semibold text-base" id="prod5-name">
+                  Full Jersey Set
                 </h2>
-                <p class="font-normal text-sm"><span>39.00</span> TK</p>
+                <p class="font-normal text-sm"><span id="prod5-price">69.00</span> TK</p>
                 <!-- <div class="card-actions">
                   <button class="btn btn-primary">Buy Now</button>
                 </div> -->
@@ -333,7 +333,7 @@
             <!-- card 5 end -->
 
             <!-- card 6 start -->
-            <div class="card bg-base-100">
+            <div class="card bg-base-100" onclick="priceCalculate('prod6-price','total-price-before','prod6-name','product-list')">
               <figure class="mx-4 mt-4 h-[200px] bg-[#f3f3f3]">
                 <img
                   src="images//prod6.png"
@@ -376,10 +376,10 @@
 
                 <!-- rating -->
 
-                <h2 class="card-title font-semibold text-base">
-                  K. Accessories
+                <h2 class="card-title font-semibold text-base" id="prod6-name">
+                  Sports Cades
                 </h2>
-                <p class="font-normal text-sm"><span>39.00</span> TK</p>
+                <p class="font-normal text-sm"><span id="prod6-price">159.00</span> TK</p>
                 <!-- <div class="card-actions">
                   <button class="btn btn-primary">Buy Now</button>
                 </div> -->
@@ -392,7 +392,7 @@
             </div>
 
             <!-- card 7 start -->
-            <div class="card bg-base-100">
+            <div class="card bg-base-100" onclick="priceCalculate('prod7-price','total-price-before','prod7-name','product-list')">
               <figure class="mx-4 mt-4 h-[200px] bg-[#f3f3f3]">
                 <img
                   src="images//prod7.png"
@@ -435,10 +435,10 @@
 
                 <!-- rating -->
 
-                <h2 class="card-title font-semibold text-base">
-                  K. Accessories
+                <h2 class="card-title font-semibold text-base" id="prod7-name">
+                  Single Relax Chair
                 </h2>
-                <p class="font-normal text-sm"><span>39.00</span> TK</p>
+                <p class="font-normal text-sm"><span id="prod7-price">185.00</span> TK</p>
                 <!-- <div class="card-actions">
                   <button class="btn btn-primary">Buy Now</button>
                 </div> -->
@@ -447,7 +447,7 @@
             <!-- card 7 end -->
 
             <!-- card 8 start -->
-            <div class="card bg-base-100">
+            <div class="card bg-base-100" onclick="priceCalculate('prod8-price','total-price-before','prod8-name','product-list')">
               <figure class="mx-4 mt-4 h-[200px] bg-[#f3f3f3]">
                 <img
                   src="images//prod8.png"
@@ -490,10 +490,10 @@
 
                 <!-- rating -->
 
-                <h2 class="card-title font-semibold text-base">
-                  K. Accessories
+                <h2 class="card-title font-semibold text-base" id="prod8-name">
+                  Children Play
                 </h2>
-                <p class="font-normal text-sm"><span>39.00</span> TK</p>
+                <p class="font-normal text-sm"><span id="prod8-price">299.00</span> TK</p>
                 <!-- <div class="card-actions">
                   <button class="btn btn-primary">Buy Now</button>
                 </div> -->
@@ -502,7 +502,7 @@
             <!-- card 8 end -->
 
             <!-- card 9 start -->
-            <div class="card bg-base-100">
+            <div class="card bg-base-100" onclick="priceCalculate('prod9-price','total-price-before','prod9-name','product-list')">
               <figure class="mx-4 mt-4 h-[200px] bg-[#f3f3f3]">
                 <img
                   src="images//prod9.png"
@@ -545,10 +545,10 @@
 
                 <!-- rating -->
 
-                <h2 class="card-title font-semibold text-base">
-                  K. Accessories
+                <h2 class="card-title font-semibold text-base" id="prod9-name">
+                  Flexible Sofa
                 </h2>
-                <p class="font-normal text-sm"><span>39.00</span> TK</p>
+                <p class="font-normal text-sm"><span id="prod9-price">339.00</span> TK</p>
                 <!-- <div class="card-actions">
                   <button class="btn btn-primary">Buy Now</button>
                 </div> -->
@@ -556,7 +556,7 @@
             </div>
             <!-- card 9 end -->
           </div>
-          <div class="w-1/4 my-24 mx-10">
+          <div class="w-full lg:w-1/4 my-24 mx-10">
             <div class="bg-white rounded-lg px-5 py-5">
               <h1 class="text-2xl font-medium pb-3">Have coupon?</h1>
               <div class="flex gap-0">
@@ -565,9 +565,11 @@
                     type="text"
                     placeholder="Coupon code"
                     class="w-full py-2 border-gray-400 border-2"
+                    id="coupon-input"
                   />
                 </div>
-                <button
+                <button disabled
+                  id="discount-apply-btn"
                   class="btn rounded-none bg-[#e527b2] text-white text-base font-semibold"
                 >
                   Apply
@@ -577,22 +579,32 @@
             <div
               class="flex flex-col align-middle bg-white rounded-lg px-5 py-5 mt-4"
             >
-              <section class="border-b-2 border-gray-100"></section>
               <section class="border-b-2 border-gray-100">
-                <h1>Total price: <span></span></h1>
-                <h1>Discount : <span></span></h1>
-                <h1>Total:<span></span></h1>
+                <p id="product-list"></p>
               </section>
-              <button
-                class="btn rounded-none bg-[#e527b2] text-white text-base font-semibold"
-              >
-                Make Purchase
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+              <section class="border-b-2 border-gray-100">
+                <h1 class="font-bold text-2xl py-3">Total price:  <span id="total-price-before" >0.00</span> TK</h1>
+                <h1 class="font-bold text-2xl py-3">Discount : <span id="discount">0.00</span></h1>
+                <h1 class="font-bold text-2xl py-3">Total:<span id="total">0.00</span></h1>
+              </section>
+           <!-- Open the modal using ID.showModal() method -->
+<button disabled id="make-purchase-button" class="btn btn rounded-none bg-[#e527b2] text-white text-base font-semibold" onclick="my_modal_1.showModal()">Make Purchase</button>
+<dialog id="my_modal_1" class="modal text-center align-middle">
+  <div class="modal-box">
+   <div class="flex justify-center">
+    <img src="images/congo.png" alt="">
+   </div>
+   <h1 class="py-2 font-bold">Congratulations</h1>
+    <p class="py-4 font-thin">Your Purchase the product</p>
+    <div >
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+       <div class="flex justify-center"> 
+        <button id="go-home-btn" class="btn rounded-none bg-[#e527b2] text-white text-base font-semibold">Go Home</button></div>
+      </form>
     </div>
+  </div>
+</dialog>
     <!-- cart end -->
 
     <script src="index.js"></script>
